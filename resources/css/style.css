@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+Pro:ital@0;1&display=swap');
+
+/* https://coolors.co/000000-14213d-fca311-e5e5e5-ffffff */
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  background-color: black;
+  color: #660708;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Menu */
+
+nav {
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #b1a7a6;
+  padding: 5px;
+  align-items: center;
+  box-sizing: border-box;
+  opacity: 0.7;
+  position: relative;
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: #660708;
+  padding: 10px;
+}
+
+nav a:hover {
+  text-shadow: 1px 1px #660708;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.logoP {
+  padding: 5px;
+  margin: 0px;
+  /* font-weight: bold; */
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/* section header */
+
+header {
+  height: 100vh;
+  max-width: 1200px;
+  margin: -69px auto 0 auto;
+  background-image: url('../images/patrick-tomasso-GXXYkSwndP4-unsplash.jpg');
+  position: relative;
+  z-index: 5;
+  display: flex;
+  /* align-content: center; */
+}
+
+header .content {
+  display: flex;
+  margin: auto;
+  width: 50vh;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: auto;
+  width: 100%;
+}
+
+header .box {
+  display: inline;
+  box-sizing: border-box;
+  width: 25vh;
+  height: 25vh;
+  /* border: 1px solid black; */
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+header .box .frame {
+  border: 1px solid black;
+  height: 100%;
+  text-align: center;
+  background-color: #161a1d;
+  font-size: 4rem;
+}
