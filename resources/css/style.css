@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+Pro:ital@0;1&display=swap');
 
-/* https://coolors.co/000000-14213d-fca311-e5e5e5-ffffff */
+/* https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff */
 
 html {
   font-family: 'Source Sans Pro', sans-serif;
@@ -17,18 +17,23 @@ body {
 /* Section Menu */
 
 nav {
-  display: flex;
+  /* outer */
   height: 45px;
-  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #b1a7a6;
+  box-sizing: border-box;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+
+  /* inner */
+  display: flex;
+  justify-content: space-between;
+  background-color: #d3d3d3;
   padding: 5px;
   align-items: center;
-  box-sizing: border-box;
   opacity: 0.7;
-  position: relative;
-  z-index: 10;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -56,7 +61,7 @@ nav li {
 .logoP {
   padding: 5px;
   margin: 0px;
-  /* font-weight: bold; */
+  font-weight: bold;
   font-size: 3rem;
   text-transform: uppercase;
 }
@@ -64,21 +69,22 @@ nav li {
 /* section header */
 
 header {
-  height: 100vh;
-  max-width: 1200px;
-  margin: -69px auto 0 auto;
   background-image: url('../images/patrick-tomasso-GXXYkSwndP4-unsplash.jpg');
-  position: relative;
-  z-index: 5;
+  background-color: #f5f3f4;
   display: flex;
-  /* align-content: center; */
+  width: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+  align-items: center;
 }
 
 header .content {
   display: flex;
-  margin: auto;
-  width: 50vh;
   flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 header img {
@@ -87,19 +93,47 @@ header img {
 }
 
 header .box {
-  display: inline;
   box-sizing: border-box;
-  width: 25vh;
-  height: 25vh;
-  /* border: 1px solid black; */
-  text-transform: uppercase;
-  padding: 10px;
+  flex: 1 0 100%;
+
+  background-color: #161a1d;
+  border: 1px solid black;
+  color: #f5f3f4;
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px 40px;
 }
 
-header .box .frame {
-  border: 1px solid black;
-  height: 100%;
-  text-align: center;
-  background-color: #161a1d;
-  font-size: 4rem;
+/* Section About */
+
+#about {
+  /* background-image: url('../images/shawnanggg-nmpW_WwwVSc-unsplash.jpg'); */
+  min-height: 2000px;
+  background-color: #b1a7a6;
+}
+
+@media only screen and (max-width: 599px) {
+  header .br-sm {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header .br-sm {
+    display: block;
+  }
+
+  .content {
+    margin: 0 auto;
+  }
+
+  .content .box {
+    flex: 1 0 calc(50% - 10px);
+  }
+}
+
+@media only screen and (min-width: 980px) {
+}
+
+@media only screen and (min-width: 1260px) {
 }
