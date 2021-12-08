@@ -76,6 +76,8 @@ header {
   height: 100vh;
   text-transform: uppercase;
   align-items: center;
+  background-position: center;
+  background-size: cover;
 }
 
 header .content {
@@ -84,7 +86,7 @@ header .content {
   align-items: stretch;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 0 60px;
 }
 
 header img {
@@ -92,16 +94,24 @@ header img {
   width: 100%;
 }
 
+header .col {
+  box-sizing: border-box;
+  flex: 1 0 150px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 header .box {
   box-sizing: border-box;
-  flex: 1 0 100%;
+  flex: 1 0 250px;
 
   background-color: #161a1d;
   border: 1px solid black;
   color: #f5f3f4;
   text-align: center;
-  font-size: 2rem;
-  padding: 15px 40px;
+  font-size: 1.5rem;
+  padding: 15px 15px;
 }
 
 /* Section About */
@@ -113,27 +123,34 @@ header .box {
 }
 
 @media only screen and (max-width: 599px) {
-  header .br-sm {
-    display: inline;
-  }
 }
 
 @media only screen and (min-width: 600px) {
-  header .br-sm {
-    display: block;
+  header .center {
+    align-self: center;
   }
 
   .content {
     margin: 0 auto;
+    width: 50vw;
+    max-width: 1000px;
   }
 
   .content .box {
-    flex: 1 0 calc(50% - 10px);
+    display: flex;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (min-width: 980px) {
+  .content .box {
+    display: flex;
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 1260px) {
+  .content .box {
+    font-size: 3rem;
+  }
 }
