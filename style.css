@@ -103,19 +103,22 @@ section img {
   flex-wrap: wrap;
 }
 
-.one-quarter {
-  flex: 1 1 100%;
-}
-
-.three-quarter {
-  flex: 1 1 100%;
-}
-
-.quarter-quarter {
-  flex: 1 1 100%;
+footer {
+  background: #1d3557;
+  min-height: 200px;
 }
 
 @media only screen and (max-width: 599px) {
+  .one-quarter,
+  .two-quarter,
+  .three-quarter,
+  .four-quarter {
+    flex: 1 1 100%;
+  }
+
+  .two-quarter-mobil {
+    flex: 0 1 calc(50% - 5px);
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -132,11 +135,15 @@ section img {
     flex: 0 1 25%;
   }
 
+  .two-quarter {
+    flex: 0 1 50%;
+  }
+
   .three-quarter {
     flex: 0 1 75%;
   }
 
-  .quarter-quarter {
+  .four-quarter {
     flex: 1 1 100%;
   }
 }
