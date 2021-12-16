@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  background: #f1faee;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Section Navigation */
+
+nav {
+  display: flex;
+  background: #1d3557;
+  color: #f1faee;
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+nav li {
+  display: block;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: #a8dadc;
+}
+
+nav li a:hover {
+  color: #e63946;
+}
+
+/* Section Header */
+header {
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0.2em 0;
+  text-align: center;
+  color: #1d3557;
+  background: #f1faee99;
+  width: 100%;
+}
+
+header p {
+  text-align: center;
+  font-size: 2em;
+  margin: 0.2em 0;
+  color: #457b9d;
+  background: #f1faee99;
+  width: 100%;
+}
+
+header .banner {
+  background-image: url('./images/camila-cordeiro-LZEaYnWM4Ro-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+section h2 {
+  padding: 10px;
+  background: #a8dadc;
+}
+
+section h3 {
+  margin: 0px 0px 10px 0px;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+footer {
+  background: #1d3557;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #f1faee;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: block;
+}
+
+footer li:first-child {
+  padding-left: 0px;
+}
+
+footer div:last-child {
+  flex: 1 1 300px;
+  text-align: right;
+}
+
+footer div:first-child {
+  flex: 1 1 300px;
+}
+
+footer li a {
+  display: inline-block;
+  padding: 0px 5px;
+  text-decoration: none;
+  color: #a8dadc;
+}
+
+footer li a:first-child {
+  padding-left: 0px;
+}
+
+footer li a:hover {
+  color: #e63946;
+}
+
+@media only screen and (max-width: 599px) {
+  .one-quarter,
+  .two-quarter,
+  .three-quarter,
+  .four-quarter {
+    flex: 1 1 100%;
+  }
+
+  .two-quarter-mobil {
+    flex: 1 1 calc(50% - 5px);
+  }
+
+  .architecture-pictures {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex: 1 1 100%;
+    gap: 10px;
+  }
+
+  .architecture-text {
+    flex: 1 1 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    font-size: 1.5rem;
+  }
+
+  .architecture-pictures {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: 1 1 calc(100% / 3 - 5px);
+  }
+  .architecture-text {
+    flex: 1 1 calc((100% / 3) * 2 - 5px);
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .col {
+    display: flex;
+    flex: 1 1 100%;
+  }
+
+  .one-quarter {
+    flex: 0 1 25%;
+  }
+
+  .two-quarter {
+    flex: 0 1 50%;
+  }
+
+  .three-quarter {
+    flex: 0 1 75%;
+  }
+
+  .four-quarter {
+    flex: 1 1 100%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  body {
+    /* width: 1170px; */
+    width: 980px;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+}
