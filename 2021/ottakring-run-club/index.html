@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ottakring Run Club</title>
 
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">Results</a></li>
-                    <li><a href="">Partnering Restaurants</a></li>
-                </ul>
-            </nav>
+      <nav class="border-box">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#founders">Founders</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#">Join</a></li>
+        </ul>
+      </nav>
       <header class="border-box">
         <img src="./images/steven-lelham-atSaEOeE8Nk-unsplash.jpg" alt="" />
         <div id="banner"><h1>Ottakring Run Club</h1></div>
-        </header>
+      </header>
+      <main class="border-box">
+        <section id="about">
+          <h2>About.</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, neque? Et ipsa
+            provident aliquid exercitationem natus distinctio necessitatibus id, vero, repellat eos
+            quos aperiam ab deleniti odit. Accusantium, nam cum.
+          </p>
+          <blockquote>
+            <p>
+              "Run when you can,<br />
+              walk if you have to;<br />
+              just never give up."
+            </p>
+          </blockquote>
+        </section>
+        <section id="founders">
+          <h2>Founders.</h2>
           <div class="pictures">
             <div class="picture">
               <img src="./images/craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="" />
@@ -38,11 +56,80 @@
               <p></p>
             </div>
           </div>
-            </section>
-            <section class="join"></section>
-        </main>
-        <footer>
-        </footer>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt mollitia dicta
+            eum nulla quos ex quibusdam saepe eos, non minus autem veniam amet neque consequatur
+            nostrum quam! Corporis, odit!
+          </p>
+        </section>
+        <section id="events">
+          <h2>Upcoming Events.</h2>
+          <p></p>
+          <ul>
+            <li>Vienna Marathon 2022</li>
+            <li>Vienna Charity Event 2022</li>
+            <li>Ottakring Run Club Barbecue 2022</li>
+            <li>Berlin Marathon 2022</li>
+            <li>Paris Marathon 2022</li>
+          </ul>
+        </section>
+        <section id="join">
+          <h2>Write and join us.</h2>
+          <form action="">
+            <p>
+              <label for="email">E-Mail:</label>
+              <input type="text" name="email" id="email" />
+            </p>
+            <p>
+              <label for="message">Message:</label>
+              <input type="text" name="message" id="message" placeholder="I want to join you!" />
+            </p>
+            <p>
+              <button>Submit</button>
+            </p>
+          </form>
+        </section>
+      </main>
+      <div class="sidebar border-box">
+        <h2>Facts.</h2>
+        <div class="fact">
+          <div class="factLabel">Located</div>
+          <div class="factText">1160 Vienna<br />Austria</div>
+        </div>
+        <div class="fact">
+          <div class="factLabel">Founded</div>
+          <div class="factText">2001</div>
+        </div>
+        <div class="fact">
+          <div class="factLabel">Members</div>
+          <div class="factText">30+</div>
+        </div>
+        <div class="fact">
+          <div class="factLabel">Runs</div>
+          <div class="factText">
+            Monday, 6:30 pm <br />
+            Wednesday, 8:00 pm <br />
+            Saturday, 8:00 pm <br />
+          </div>
+        </div>
+        <div class="fact">
+          <div class="factLabel">Founders</div>
+          <div class="factText">
+            Kevin <br />
+            Michael <br />
+            Raphael
+          </div>
+        </div>
+        <div class="fact">
+          <div class="factLabel">Connect</div>
+          <div class="factText">
+            <a href="#">Facebook</a><br />
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="border-box">Ottakring Run Club</footer>
     </div>
-</body>
+  </body>
 </html>
